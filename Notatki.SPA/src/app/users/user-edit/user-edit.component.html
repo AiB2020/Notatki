@@ -1,0 +1,110 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-sm-4">
+        <h1>Profile - Edit</h1>
+    </div>
+   <div class="col-sm-8">
+    <div *ngIf="editForm.dirty" class="alert alert-info">
+       <strong>Informations: </strong> You've made changes. Any changes not saved will be lost!
+     </div>
+   </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <img class="card-img-top img-thumbnail" src="{{user.photoUrl}}" alt="{{user.username}}">
+        <div class="card-body">
+         
+         
+          <div>
+            <strong>Localization:</strong>
+            <p>{{user.city}}, {{user.country}}</p>
+          </div>
+          <div>
+            <strong>Last Active:</strong>
+            <p>{{user.lastActive}}</p>
+          </div>
+          <div>
+            <strong>User sice:</strong>
+            <p>{{user.created}}</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button [disabled]="!editForm.dirty" form="editForm" class="btn btn-success btn-block">Save changes</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <form #editForm="ngForm" id="editForm" (ngSubmit)="updateUser()">
+        <div class="tab-panel">
+          <tabset class="user-tabset">
+            <tab heading="Informations">
+              <table class="user-table">
+                <tr>
+                  <td class="user-table-td">
+                    <h5>School</h5>
+                    <textarea class="form-control" name="school" rows="1" [(ngModel)]="user.school"></textarea>
+                  </td>
+                  <td class="user-table-td">
+                    <h5>Department</h5>
+                    <textarea class="form-control" name="department" rows="1" [(ngModel)]="user.department"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>Direction</h5>
+                    <textarea class="form-control" name="direction" rows="1" [(ngModel)]="user.direction"></textarea>
+                  </td>
+                  <td>
+                    <h5>Specialisation</h5>
+                    <textarea class="form-control" name="specialisation" rows="1" [(ngModel)]="user.specialisation"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h5>Semester</h5>
+                    <textarea class="form-control" name="semester" rows="1" [(ngModel)]="user.semester"></textarea>
+                  </td>
+          
+                    <td>
+                      <h5>City</h5>
+                      <textarea class="form-control" name="city" rows="1" [(ngModel)]="user.city"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Country</h5>
+                      <textarea class="form-control" name="country" rows="1" [(ngModel)]="user.country"></textarea>
+                    </td>
+                  </tr>
+              </table>
+            </tab>
+            <tab heading="O mnie">
+              <h5>Motto</h5>
+              <textarea class="form-control" name="motto" rows="4" [(ngModel)]="user.motto"></textarea>
+              <h5>Description</h5>
+              <textarea class="form-control" name="description" rows="4" [(ngModel)]="user.description"></textarea>
+            
+            </tab>
+            <tab heading="Zainteresowania">
+              <h5>Interests</h5>
+              <textarea class="form-control" name="interests" rows="4" [(ngModel)]="user.interests"></textarea>
+              <h5>Free Time</h5>
+              <textarea class="form-control" name="freeTime" rows="4" [(ngModel)]="user.freeTime"></textarea>
+              <h5>Sport</h5>
+              <textarea class="form-control" name="sport" rows="4" [(ngModel)]="user.sport"></textarea>
+              <h5>Movies</h5>
+              <textarea class="form-control" name="movies" rows="4" [(ngModel)]="user.movies"></textarea>
+              <h5>Music</h5>
+              <textarea class="form-control" name="music" rows="4" [(ngModel)]="user.music"></textarea>
+            </tab>
+            
+            <tab heading="Photos">
+              <app-photos [photos]="user.photos"></app-photos>
+            </tab>         
+          </tabset>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> 

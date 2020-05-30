@@ -1,0 +1,14 @@
+C:\Users\kacpr\Notatki\Notatki.API\obj\Debug\netcoreapp2.2\Notatki.API.csprojAssemblyReference.cache
+C:\Users\kacpr\Notatki\Notatki.API\obj\Debug\netcoreapp2.2\Notatki.API.csproj.CoreCompileInputs.cache
+C:\Users\kacpr\Notatki\Notatki.API\obj\Debug\netcoreapp2.2\Notatki.API.RazorAssemblyInfo.cache
+C:\Users\kacpr\Notatki\Notatki.API\obj\Debug\netcoreapp2.2\Notatki.API.RazorAssemblyInfo.cs
+C:\Users\kacpr\Notatki\Notatki.API\obj\Debug\netcoreapp2.2\Notatki.API.AssemblyInfoInputs.cache
+C:\Users\kacpr\Notatki\Notatki.API\obj\Debug\netcoreapp2.2\Notatki.API.AssemblyInfo.cs
+C:\Users\kacpr\Notatki\Notatki.API\bin\Debug\netcoreapp2.2\Notatki.API.deps.json
+C:\Users\kacpr\Notatki\Notatki.API\bin\Debug\netcoreapp2.2\Notatki.API.runtimeconfig.json
+C:\Users\kacpr\Notatki\Notatki.API\bin\Debug\netcoreapp2.2\Notatki.API.runtimeconfig.dev.json
+C:\Users\kacpr\Notatki\Notatki.API\bin\Debug\netcoreapp2.2\Notatki.API.dll
+C:\Users\kacpr\Notatki\Notatki.API\bin\Debug\netcoreapp2.2\Notatki.API.pdb
+C:\Users\kacpr\Notatki\Notatki.API\obj\Debug\netcoreapp2.2\Notatki.API.RazorTargetAssemblyInfo.cache
+C:\Users\kacpr\Notatki\Notatki.API\obj\Debug\netcoreapp2.2\Notatki.API.dll
+C:\Users\kacpr\Notatki\Notatki.API\obj\Debug\netcoreapp2.2\Notatki.API.pdb

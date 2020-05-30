@@ -1,0 +1,97 @@
+<div class="container mt-3">
+  <div class="row">
+    <h1>Profile {{user.username}}</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <img class="card-img-top img-thumbnail" src="{{user.photoUrl}}" alt="{{user.username}}">
+        <div class="card-body">
+         
+          <div>
+            <strong>Localization:</strong>
+            <p>{{user.city}}, {{user.country}}</p>
+          </div>
+          <div>
+            <strong>Last Active:</strong>
+            <p>{{user.lastActive}}</p>
+          </div>
+          <div>
+            <strong>User since:</strong>
+            <p>{{user.created}}</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group d-flex">
+            <button class="btn btn-success w-100">Like</button>
+            <button class="btn btn-primary w-100">Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="tab-panel">
+        <tabset class="user-tabset">
+          <tab heading="Informations {{user.username}}">
+            <table class="user-table" >
+              <tr>
+                <td class="user-table-td">
+                  <h5>School</h5>
+                  <p>{{user.school}}</p>
+                </td>
+                <td class="user-table-td">
+                  <h5>Department</h5>
+                  <p>{{user.department}}</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h5>Direction</h5>
+                  <p>{{user.direction}}</p>
+                </td>
+             
+                <td>
+                  <h5>Specialisation</h5>
+                  <p>{{user.specialisation}}</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h5>Semester</h5>
+                  <p>{{user.semester}}</p>
+                </td>
+              </tr>
+        
+            </table>
+          </tab>
+          <tab heading="About me">
+              <h5>Life motto</h5>
+              <p>{{user.motto}}</p>
+              <h5>Description</h5>
+              <p>{{user.description}}</p>
+          </tab>
+          <tab heading="Hobbies">
+              <h5>Interests</h5>
+              <p>{{user.interests}}</p>
+              <h5>Free Time</h5>
+              <p>{{user.freeTime}}</p>
+              <h5>Sport</h5>
+              <p>{{user.sport}}</p>
+              <h5>Movies</h5>
+              <p>{{user.movies}}</p>
+              <h5>Music</h5>
+              <p>{{user.music}}</p>
+          </tab>
+          
+          <tab heading="Photos">           
+            <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+           
+          </tab>
+          <tab heading="Messages">           
+            Tu beda wiadomosci
+          </tab>
+        </tabset>
+      </div>
+    </div>
+  </div>
+</div> 
